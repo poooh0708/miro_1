@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Stack Multipurpose HTML Template</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Site Description Here">
+        <link href="/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="/css/stack-interface.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="/css/socicon.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="/css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="/css/flickity.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="/css/iconsmind.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="/css/jquery.steps.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="/css/theme.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="/css/custom.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,400i,500,600,700%7CMerriweather:300,300i" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body class=" ">
+        <a id="start"></a>
+      
+        
+        <nav class="bar bar-toggle " data-fixed-at="200">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-1 col-sm-2 col-xs-3">
+                            <div class="bar__module">
+                                <a href="index.html">
+                                    <img class="logo logo-dark" alt="logo" src="/img/logo-dark.png" />
+                                    <img class="logo logo-light" alt="logo" src="/img/logo-light.png" />
+                                </a>
+                            </div>
+                            <!--end module-->
+                        </div>
+                        <div class="col-md-11 col-sm-10 col-xs-9">
+                            <div class="bar__module">
+                                <a class="menu-toggle pull-right" href="#" data-notification-link="sidebar-menu">
+                                    <i class="stack-interface stack-menu"></i>
+                                </a>
+                            </div>
+                            <!--end module-->
+                        </div>
+                        <!--end columns-->
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </nav>
+            <div class="notification pos-right pos-top side-menu bg--white" data-notification-link="sidebar-menu" data-animation="from-right">
+                <div class="side-menu__module pos-vertical-center text-right">
+                    <ul class="menu-vertical">
+                        <li>
+                            <a class="inner-link" href="/home">Home</a>
+                        </li>
+                        <li>
+                            <a class="inner-link" href="/about">About</a>
+                        </li>
+                        <li>
+                            <a class="inner-link" href="/news">news</a>
+                        </li>
+                        <li>
+                            <a class="inner-link" href="/list">list</a>
+                        </li>
+                        <li>
+                            <a class="inner-link" href="/contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--end module-->
+                <div class="side-menu__module pos-bottom pos-absolute col-xs-12 text-right">
+                    <ul class="social-list list-inline text-right list--hover">
+                        <li>
+                            <a href="#">
+                                <i class="socicon socicon-google icon icon--xs"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="socicon socicon-twitter icon icon--xs"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="socicon socicon-facebook icon icon--xs"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="socicon socicon-instagram icon icon--xs"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+        <div class="main-container">
+            <section class="text-center imagebg space--lg" data-overlay="3">
+                <div class="background-image-holder">
+                    <img alt="background" src="/img/landing-21.jpg" />
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-8 col-md-6">
+                            <h1>Hi, We're Stack</h1>
+                            <p class="lead">
+                                An innovative collective of like-minded folks making useful and enduring technology products
+                            </p>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+            <section class="text-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+                            <h1 style="text-align: left; margin: 0 0 0 0"> <%=result.title%> </h2>
+                            <h5 style="text-align: right; color:gray ;margin:0 0 0 0"><%=result.created_at%> &nbsp; &nbsp;조회수 : <%=result.hits%> </h5>
+                            <h5 style="text-align: right; color:gray ;margin:0 0 0 0"> 작성자: <%=result.author%> </h5>
+                         
+                            <hr>
+                            <p class="lead" style="text-align: left ; margin-bottom: 30% ">
+                              <%=result.content%>
+                             </p>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+                <a class="btn" href="/list">
+                        <span class="btn__text"><h3 style= "margin:0 0 0 0"><strong>list</strong></h3></span>
+                    </a>
+            </section>
+
+            <section class="text-center bg--secondary">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+                            <h2>What drives us</h2>
+                            <p class="lead">
+                                Whether you’re building a welcome mat for your SaaS or a clean, corporate portfolio, Stack has your design needs covered.
+                            </p>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+            
+            
+        <script src="/js/jquery-3.1.1.min.js"></script>
+        <script src="/js/flickity.min.js"></script>
+        <script src="/js/easypiechart.min.js"></script>
+        <script src="/js/parallax.js"></script>
+        <script src="/js/typed.min.js"></script>
+        <script src="/js/datepicker.js"></script>
+        <script src="/js/isotope.min.js"></script>
+        <script src="/js/ytplayer.min.js"></script>
+        <script src="/js/lightbox.min.js"></script>
+        <script src="/js/granim.min.js"></script>
+        <script src="/js/jquery.steps.min.js"></script>
+        <script src="/js/countdown.min.js"></script>
+        <script src="/js/twitterfetcher.min.js"></script>
+        <script src="/js/spectragram.min.js"></script>
+        <script src="/js/smooth-scroll.min.js"></script>
+        <script src="/js/scripts.js"></script>
+    </body>
+</html>
